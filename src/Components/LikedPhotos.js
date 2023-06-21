@@ -1,11 +1,11 @@
 import React from 'react';
-import Images from './ImageCard';
+import ImageCard from './ImageCard';
 
 const LikedPhotos = ({ likes, title }) => {
   return (
-    <div className="likes">
+    <div >
       <h1>{title}</h1>
-      <div>
+      <div className="likes">
         {
         likes.map((item) => { return <img src={item} alt='error'/>; })
         }

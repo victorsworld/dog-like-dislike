@@ -3,8 +3,9 @@ import ImageCard from './ImageCard';
 
 const Container = ({ allPhotos, handleLikes, handleDislikes, title }) => {
   return (
-    <div>
+    <div >
       <h1>{title}</h1>
+      <div className="parent">
       {allPhotos.map((photo, index) => {
         return (
           <ImageCard
@@ -16,6 +17,7 @@ const Container = ({ allPhotos, handleLikes, handleDislikes, title }) => {
           />
         );
       })}
+      </div>
     </div>
   );
 };
